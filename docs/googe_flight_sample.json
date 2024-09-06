@@ -1,0 +1,775 @@
+{
+  "search_metadata": {
+    "id": "66da0940861b9d9421b5f49f",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/d63d86b7eb2ab50e/66da0940861b9d9421b5f49f.json",
+    "created_at": "2024-09-05 19:40:48 UTC",
+    "processed_at": "2024-09-05 19:40:48 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=pt-br&gl=br&curr=BRL&tfs=CBwQAhoeEgoyMDI0LTA5LTA3agcIARIDQ0dIcgcIARIDR0lHGh4SCjIwMjQtMDktMTBqBwgBEgNHSUdyBwgBEgNDR0hCAQFIAXABmAEB",
+    "raw_html_file": "https://serpapi.com/searches/d63d86b7eb2ab50e/66da0940861b9d9421b5f49f.html",
+    "prettify_html_file": "https://serpapi.com/searches/d63d86b7eb2ab50e/66da0940861b9d9421b5f49f.prettify",
+    "total_time_taken": 4.58
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "pt-br",
+    "gl": "br",
+    "type": "1",
+    "departure_id": "CGH",
+    "arrival_id": "GIG",
+    "outbound_date": "2024-09-07",
+    "return_date": "2024-09-10",
+    "travel_class": 1,
+    "adults": 1,
+    "currency": "BRL"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Aeroporto de São Paulo Congonhas",
+            "id": "CGH",
+            "time": "2024-09-07 06:45"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional do Rio de Janeiro - Galeão",
+            "id": "GIG",
+            "time": "2024-09-07 07:55"
+          },
+          "duration": 70,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "Gol",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G3.png",
+          "travel_class": "Economy",
+          "flight_number": "G3 1660",
+          "legroom": "76 cm",
+          "extensions": [
+            "Average legroom (76 cm)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 47 kg"
+          ]
+        }
+      ],
+      "total_duration": 70,
+      "carbon_emissions": {
+        "this_flight": 47000,
+        "typical_for_this_route": 56000,
+        "difference_percent": -16
+      },
+      "price": 3225,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G3.png",
+      "departure_token": "WyJDalJJWkVwdFRtdHNkWGhRUW10QlFVWmpSVkZDUnkwdExTMHRMUzB0TFc5NVkyZHlOa0ZCUVVGQlIySmhRMVZSVEhoUGVWbEJFZ1pITXpFMk5qQWFDd2l0MXhNUUFob0RRbEpNT0J4dzFNTUQiLFtbIkNHSCIsIjIwMjQtMDktMDciLCJHSUciLG51bGwsIkczIiwiMTY2MCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Aeroporto de São Paulo Congonhas",
+            "id": "CGH",
+            "time": "2024-09-07 11:15"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional do Rio de Janeiro - Galeão",
+            "id": "GIG",
+            "time": "2024-09-07 12:25"
+          },
+          "duration": 70,
+          "airplane": "Boeing 737",
+          "airline": "Gol",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G3.png",
+          "travel_class": "Economy",
+          "flight_number": "G3 1656",
+          "legroom": "76 cm",
+          "extensions": [
+            "Average legroom (76 cm)",
+            "In-seat power & USB outlets",
+            "Stream media to your device",
+            "Carbon emissions estimate: 71 kg"
+          ]
+        }
+      ],
+      "total_duration": 70,
+      "carbon_emissions": {
+        "this_flight": 72000,
+        "typical_for_this_route": 56000,
+        "difference_percent": 29
+      },
+      "price": 3225,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G3.png",
+      "departure_token": "WyJDalJJWkVwdFRtdHNkWGhRUW10QlFVWmpSVkZDUnkwdExTMHRMUzB0TFc5NVkyZHlOa0ZCUVVGQlIySmhRMVZSVEhoUGVWbEJFZ1pITXpFMk5UWWFDd2l0MXhNUUFob0RRbEpNT0J4dzFNTUQiLFtbIkNHSCIsIjIwMjQtMDktMDciLCJHSUciLG51bGwsIkczIiwiMTY1NiJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Aeroporto de São Paulo Congonhas",
+            "id": "CGH",
+            "time": "2024-09-07 08:15"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional de Foz do Iguaçu/Cataratas",
+            "id": "IGU",
+            "time": "2024-09-07 10:00"
+          },
+          "duration": 105,
+          "airplane": "Airbus A320",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 3384",
+          "legroom": "76 cm",
+          "extensions": [
+            "Average legroom (76 cm)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 88 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Aeroporto Internacional de Foz do Iguaçu/Cataratas",
+            "id": "IGU",
+            "time": "2024-09-07 14:15"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional do Rio de Janeiro - Galeão",
+            "id": "GIG",
+            "time": "2024-09-07 16:10"
+          },
+          "duration": 115,
+          "airplane": "Airbus A319",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 3685",
+          "legroom": "76 cm",
+          "extensions": [
+            "Average legroom (76 cm)",
+            "Wi-Fi for a fee",
+            "In-seat power outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 131 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 255,
+          "name": "Aeroporto Internacional de Foz do Iguaçu/Cataratas",
+          "id": "IGU"
+        }
+      ],
+      "total_duration": 475,
+      "carbon_emissions": {
+        "this_flight": 220000,
+        "typical_for_this_route": 56000,
+        "difference_percent": 293
+      },
+      "price": 4157,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+      "departure_token": "WyJDalJJWkVwdFRtdHNkWGhRUW10QlFVWmpSVkZDUnkwdExTMHRMUzB0TFc5NVkyZHlOa0ZCUVVGQlIySmhRMVZSVEhoUGVWbEJFZzFNUVRNek9EUjhURUV6TmpnMUdnc0l6NjhaRUFJYUEwSlNURGdjY0p6R0JBPT0iLFtbIkNHSCIsIjIwMjQtMDktMDciLCJJR1UiLG51bGwsIkxBIiwiMzM4NCJdLFsiSUdVIiwiMjAyNC0wOS0wNyIsIkdJRyIsbnVsbCwiTEEiLCIzNjg1Il1dXQ=="
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Aeroporto de São Paulo Congonhas",
+            "id": "CGH",
+            "time": "2024-09-07 21:40"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional do Recife/Guararapes - Gilberto Freyre",
+            "id": "REC",
+            "time": "2024-09-08 00:45"
+          },
+          "duration": 185,
+          "airline": "Azul",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AD.png",
+          "travel_class": "Economy",
+          "flight_number": "AD 4662",
+          "legroom": "76 cm",
+          "extensions": [
+            "Average legroom (76 cm)",
+            "In-seat power & USB outlets",
+            "Live TV",
+            "Carbon emissions estimate: 184 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Aeroporto Internacional do Recife/Guararapes - Gilberto Freyre",
+            "id": "REC",
+            "time": "2024-09-08 03:15"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional do Rio de Janeiro - Galeão",
+            "id": "GIG",
+            "time": "2024-09-08 06:05"
+          },
+          "duration": 170,
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 3871",
+          "legroom": "74 cm",
+          "extensions": [
+            "Below average legroom (74 cm)",
+            "Wi-Fi for a fee",
+            "Stream media to your device",
+            "Carbon emissions estimate: 157 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 150,
+          "name": "Aeroporto Internacional do Recife/Guararapes - Gilberto Freyre",
+          "id": "REC",
+          "overnight": true
+        }
+      ],
+      "total_duration": 505,
+      "carbon_emissions": {
+        "this_flight": 342000,
+        "typical_for_this_route": 56000,
+        "difference_percent": 511
+      },
+      "price": 4362,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "departure_token": "WyJDalJJWkVwdFRtdHNkWGhRUW10QlFVWmpSVkZDUnkwdExTMHRMUzB0TFc5NVkyZHlOa0ZCUVVGQlIySmhRMVZSVEhoUGVWbEJFZzFCUkRRMk5qSjhURUV6T0RjeEdnc0lxODhhRUFJYUEwSlNURGdjY08zaUJBPT0iLFtbIkNHSCIsIjIwMjQtMDktMDciLCJSRUMiLG51bGwsIkFEIiwiNDY2MiJdLFsiUkVDIiwiMjAyNC0wOS0wOCIsIkdJRyIsbnVsbCwiTEEiLCIzODcxIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Aeroporto de São Paulo Congonhas",
+            "id": "CGH",
+            "time": "2024-09-07 11:55"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional de Salvador Luís Eduardo Magalhães",
+            "id": "SSA",
+            "time": "2024-09-07 14:20"
+          },
+          "duration": 145,
+          "airplane": "Airbus A320",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 3628",
+          "legroom": "76 cm",
+          "extensions": [
+            "Average legroom (76 cm)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 132 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Aeroporto Internacional de Salvador Luís Eduardo Magalhães",
+            "id": "SSA",
+            "time": "2024-09-07 17:30"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional do Rio de Janeiro - Galeão",
+            "id": "GIG",
+            "time": "2024-09-07 19:50"
+          },
+          "duration": 140,
+          "airplane": "Airbus A319",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 3647",
+          "legroom": "76 cm",
+          "extensions": [
+            "Average legroom (76 cm)",
+            "Wi-Fi for a fee",
+            "In-seat power outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 133 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 190,
+          "name": "Aeroporto Internacional de Salvador Luís Eduardo Magalhães",
+          "id": "SSA"
+        }
+      ],
+      "total_duration": 475,
+      "carbon_emissions": {
+        "this_flight": 266000,
+        "typical_for_this_route": 56000,
+        "difference_percent": 375
+      },
+      "price": 4473,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+      "departure_token": "WyJDalJJWkVwdFRtdHNkWGhRUW10QlFVWmpSVkZDUnkwdExTMHRMUzB0TFc5NVkyZHlOa0ZCUVVGQlIySmhRMVZSVEhoUGVWbEJFZzFNUVRNMk1qaDhURUV6TmpRM0dnc0l1cVliRUFJYUEwSlNURGdjY0x6eUJBPT0iLFtbIkNHSCIsIjIwMjQtMDktMDciLCJTU0EiLG51bGwsIkxBIiwiMzYyOCJdLFsiU1NBIiwiMjAyNC0wOS0wNyIsIkdJRyIsbnVsbCwiTEEiLCIzNjQ3Il1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Aeroporto de São Paulo Congonhas",
+            "id": "CGH",
+            "time": "2024-09-07 15:30"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto de Porto Seguro",
+            "id": "BPS",
+            "time": "2024-09-07 17:30"
+          },
+          "duration": 120,
+          "airplane": "Airbus A320",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 4644",
+          "legroom": "76 cm",
+          "extensions": [
+            "Average legroom (76 cm)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 109 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Aeroporto de Porto Seguro",
+            "id": "BPS",
+            "time": "2024-09-07 18:30"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional de Belo Horizonte (Aeroporto Tancredo Neves)",
+            "id": "CNF",
+            "time": "2024-09-07 19:50"
+          },
+          "duration": 80,
+          "airline": "Azul",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AD.png",
+          "travel_class": "Economy",
+          "flight_number": "AD 2427",
+          "legroom": "76 cm",
+          "extensions": [
+            "Average legroom (76 cm)",
+            "In-seat power & USB outlets",
+            "Live TV",
+            "Carbon emissions estimate: 78 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Aeroporto Internacional de Belo Horizonte (Aeroporto Tancredo Neves)",
+            "id": "CNF",
+            "time": "2024-09-07 23:40"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional do Rio de Janeiro - Galeão",
+            "id": "GIG",
+            "time": "2024-09-08 00:40"
+          },
+          "duration": 60,
+          "airline": "Azul",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AD.png",
+          "travel_class": "Economy",
+          "flight_number": "AD 2985",
+          "legroom": "79 cm",
+          "extensions": [
+            "Average legroom (79 cm)",
+            "Live TV",
+            "Carbon emissions estimate: 68 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 60,
+          "name": "Aeroporto de Porto Seguro",
+          "id": "BPS"
+        },
+        {
+          "duration": 230,
+          "name": "Aeroporto Internacional de Belo Horizonte (Aeroporto Tancredo Neves)",
+          "id": "CNF"
+        }
+      ],
+      "total_duration": 550,
+      "carbon_emissions": {
+        "this_flight": 257000,
+        "typical_for_this_route": 56000,
+        "difference_percent": 359
+      },
+      "price": 4504,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "departure_token": "WyJDalJJWkVwdFRtdHNkWGhRUW10QlFVWmpSVkZDUnkwdExTMHRMUzB0TFc5NVkyZHlOa0ZCUVVGQlIySmhRMVZSVEhoUGVWbEJFaFJNUVRRMk5EUjhRVVF5TkRJM2ZFRkVNams0TlJvTENOTytHeEFDR2dOQ1VrdzRISERuOWdRPSIsW1siQ0dIIiwiMjAyNC0wOS0wNyIsIkJQUyIsbnVsbCwiTEEiLCI0NjQ0Il0sWyJCUFMiLCIyMDI0LTA5LTA3IiwiQ05GIixudWxsLCJBRCIsIjI0MjciXSxbIkNORiIsIjIwMjQtMDktMDciLCJHSUciLG51bGwsIkFEIiwiMjk4NSJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Aeroporto de São Paulo Congonhas",
+            "id": "CGH",
+            "time": "2024-09-07 21:40"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional do Recife/Guararapes - Gilberto Freyre",
+            "id": "REC",
+            "time": "2024-09-08 00:45"
+          },
+          "duration": 185,
+          "airline": "Azul",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AD.png",
+          "travel_class": "Economy",
+          "flight_number": "AD 4662",
+          "legroom": "76 cm",
+          "extensions": [
+            "Average legroom (76 cm)",
+            "In-seat power & USB outlets",
+            "Live TV",
+            "Carbon emissions estimate: 184 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Aeroporto Internacional do Recife/Guararapes - Gilberto Freyre",
+            "id": "REC",
+            "time": "2024-09-08 02:35"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional do Rio de Janeiro - Galeão",
+            "id": "GIG",
+            "time": "2024-09-08 05:25"
+          },
+          "duration": 170,
+          "airline": "Azul",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AD.png",
+          "travel_class": "Economy",
+          "flight_number": "AD 4032",
+          "legroom": "76 cm",
+          "extensions": [
+            "Average legroom (76 cm)",
+            "In-seat power & USB outlets",
+            "Live TV",
+            "Carbon emissions estimate: 164 kg"
+          ],
+          "overnight": true
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 110,
+          "name": "Aeroporto Internacional do Recife/Guararapes - Gilberto Freyre",
+          "id": "REC",
+          "overnight": true
+        }
+      ],
+      "total_duration": 465,
+      "carbon_emissions": {
+        "this_flight": 349000,
+        "typical_for_this_route": 56000,
+        "difference_percent": 523
+      },
+      "price": 4597,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AD.png",
+      "departure_token": "WyJDalJJWkVwdFRtdHNkWGhRUW10QlFVWmpSVkZDUnkwdExTMHRMUzB0TFc5NVkyZHlOa0ZCUVVGQlIySmhRMVZSVEhoUGVWbEJFZzFCUkRRMk5qSjhRVVEwTURNeUdnc0lvSWNjRUFJYUEwSlNURGdjY09tREJRPT0iLFtbIkNHSCIsIjIwMjQtMDktMDciLCJSRUMiLG51bGwsIkFEIiwiNDY2MiJdLFsiUkVDIiwiMjAyNC0wOS0wOCIsIkdJRyIsbnVsbCwiQUQiLCI0MDMyIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Aeroporto de São Paulo Congonhas",
+            "id": "CGH",
+            "time": "2024-09-07 16:55"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek",
+            "id": "BSB",
+            "time": "2024-09-07 18:45"
+          },
+          "duration": 110,
+          "airplane": "Airbus A320",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 3016",
+          "legroom": "76 cm",
+          "extensions": [
+            "Average legroom (76 cm)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 92 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek",
+            "id": "BSB",
+            "time": "2024-09-07 19:25"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional do Rio de Janeiro - Galeão",
+            "id": "GIG",
+            "time": "2024-09-07 21:10"
+          },
+          "duration": 105,
+          "airplane": "Airbus A321",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 3780",
+          "legroom": "71 cm",
+          "extensions": [
+            "Below average legroom (71 cm)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 95 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 40,
+          "name": "Aeroporto Internacional de Brasília - Presidente Juscelino Kubitschek",
+          "id": "BSB"
+        }
+      ],
+      "total_duration": 255,
+      "carbon_emissions": {
+        "this_flight": 187000,
+        "typical_for_this_route": 56000,
+        "difference_percent": 234
+      },
+      "price": 7088,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+      "departure_token": "WyJDalJJWkVwdFRtdHNkWGhRUW10QlFVWmpSVkZDUnkwdExTMHRMUzB0TFc5NVkyZHlOa0ZCUVVGQlIySmhRMVZSVEhoUGVWbEJFZzFNUVRNd01UWjhURUV6Tnpnd0dnc0l2YUVyRUFJYUEwSlNURGdjY043Z0J3PT0iLFtbIkNHSCIsIjIwMjQtMDktMDciLCJCU0IiLG51bGwsIkxBIiwiMzAxNiJdLFsiQlNCIiwiMjAyNC0wOS0wNyIsIkdJRyIsbnVsbCwiTEEiLCIzNzgwIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Aeroporto de São Paulo Congonhas",
+            "id": "CGH",
+            "time": "2024-09-07 20:10"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional de Belo Horizonte (Aeroporto Tancredo Neves)",
+            "id": "CNF",
+            "time": "2024-09-07 21:30"
+          },
+          "duration": 80,
+          "airplane": "Airbus A320",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 4622",
+          "legroom": "76 cm",
+          "extensions": [
+            "Average legroom (76 cm)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 67 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Aeroporto Internacional de Belo Horizonte (Aeroporto Tancredo Neves)",
+            "id": "CNF",
+            "time": "2024-09-07 22:10"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional do Rio de Janeiro - Galeão",
+            "id": "GIG",
+            "time": "2024-09-07 23:15"
+          },
+          "duration": 65,
+          "airplane": "Airbus A319",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Economy",
+          "flight_number": "LA 3671",
+          "legroom": "76 cm",
+          "extensions": [
+            "Average legroom (76 cm)",
+            "Wi-Fi for a fee",
+            "In-seat power outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 63 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 40,
+          "name": "Aeroporto Internacional de Belo Horizonte (Aeroporto Tancredo Neves)",
+          "id": "CNF"
+        }
+      ],
+      "total_duration": 185,
+      "carbon_emissions": {
+        "this_flight": 130000,
+        "typical_for_this_route": 56000,
+        "difference_percent": 132
+      },
+      "price": 7088,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+      "departure_token": "WyJDalJJWkVwdFRtdHNkWGhRUW10QlFVWmpSVkZDUnkwdExTMHRMUzB0TFc5NVkyZHlOa0ZCUVVGQlIySmhRMVZSVEhoUGVWbEJFZzFNUVRRMk1qSjhURUV6TmpjeEdnc0l2YUVyRUFJYUEwSlNURGdjY043Z0J3PT0iLFtbIkNHSCIsIjIwMjQtMDktMDciLCJDTkYiLG51bGwsIkxBIiwiNDYyMiJdLFsiQ05GIiwiMjAyNC0wOS0wNyIsIkdJRyIsbnVsbCwiTEEiLCIzNjcxIl1dXQ=="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Aeroporto de São Paulo Congonhas",
+            "id": "CGH",
+            "time": "2024-09-07 06:40"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional de Belo Horizonte (Aeroporto Tancredo Neves)",
+            "id": "CNF",
+            "time": "2024-09-07 07:55"
+          },
+          "duration": 75,
+          "airplane": "Airbus A320",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Premium Economy",
+          "flight_number": "LA 3036",
+          "legroom": "86 cm",
+          "extensions": [
+            "Below average legroom (86 cm)",
+            "In-seat power outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 67 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Aeroporto Internacional de Belo Horizonte (Aeroporto Tancredo Neves)",
+            "id": "CNF",
+            "time": "2024-09-07 08:25"
+          },
+          "arrival_airport": {
+            "name": "Aeroporto Internacional do Rio de Janeiro - Galeão",
+            "id": "GIG",
+            "time": "2024-09-07 09:30"
+          },
+          "duration": 65,
+          "airplane": "Airbus A321",
+          "airline": "LATAM",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+          "travel_class": "Premium Economy",
+          "flight_number": "LA 3181",
+          "legroom": "86 cm",
+          "extensions": [
+            "Below average legroom (86 cm)",
+            "Wi-Fi for a fee",
+            "Stream media to your device",
+            "Carbon emissions estimate: 54 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 30,
+          "name": "Aeroporto Internacional de Belo Horizonte (Aeroporto Tancredo Neves)",
+          "id": "CNF"
+        }
+      ],
+      "total_duration": 170,
+      "carbon_emissions": {
+        "this_flight": 122000,
+        "typical_for_this_route": 56000,
+        "difference_percent": 118
+      },
+      "price": 7298,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LA.png",
+      "departure_token": "WyJDalJJWkVwdFRtdHNkWGhRUW10QlFVWmpSVkZDUnkwdExTMHRMUzB0TFc5NVkyZHlOa0ZCUVVGQlIySmhRMVZSVEhoUGVWbEJFZzFNUVRNd016WjhURUV6TVRneEdnc0l4Y1VzRUFJYUEwSlNURGdjY0pQK0J3PT0iLFtbIkNHSCIsIjIwMjQtMDktMDciLCJDTkYiLG51bGwsIkxBIiwiMzAzNiJdLFsiQ05GIiwiMjAyNC0wOS0wNyIsIkdJRyIsbnVsbCwiTEEiLCIzMTgxIl1dXQ=="
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 3225,
+    "price_level": "high",
+    "typical_price_range": [385, 3200],
+    "price_history": [
+      [1720321200, 304],
+      [1720407600, 282],
+      [1720494000, 282],
+      [1720580400, 282],
+      [1720666800, 363],
+      [1720753200, 341],
+      [1720839600, 341],
+      [1720926000, 364],
+      [1721012400, 364],
+      [1721098800, 424],
+      [1721185200, 424],
+      [1721271600, 425],
+      [1721358000, 427],
+      [1721444400, 427],
+      [1721530800, 427],
+      [1721617200, 427],
+      [1721703600, 427],
+      [1721790000, 427],
+      [1721876400, 413],
+      [1721962800, 276],
+      [1722049200, 276],
+      [1722135600, 276],
+      [1722222000, 276],
+      [1722308400, 404],
+      [1722394800, 368],
+      [1722481200, 368],
+      [1722567600, 494],
+      [1722654000, 494],
+      [1722740400, 494],
+      [1722826800, 494],
+      [1722913200, 322],
+      [1722999600, 298],
+      [1723086000, 298],
+      [1723172400, 319],
+      [1723258800, 422],
+      [1723345200, 422],
+      [1723431600, 396],
+      [1723518000, 358],
+      [1723604400, 358],
+      [1723690800, 479],
+      [1723777200, 559],
+      [1723863600, 559],
+      [1723950000, 559],
+      [1724036400, 563],
+      [1724122800, 563],
+      [1724209200, 646],
+      [1724295600, 717],
+      [1724382000, 716],
+      [1724468400, 716],
+      [1724554800, 716],
+      [1724641200, 776],
+      [1724727600, 776],
+      [1724814000, 776],
+      [1724900400, 945],
+      [1724986800, 945],
+      [1725073200, 945],
+      [1725159600, 1446],
+      [1725246000, 2230],
+      [1725332400, 2230],
+      [1725418800, 2230],
+      [1725505200, 3225]
+    ]
+  }
+}
