@@ -10,7 +10,7 @@ import (
 )
 
 // Search for the available flights through external API integration
-func getFlights(arg SearchParams) []interface{} {
+func GetFlights(arg SearchParams) []interface{} {
 	config, err := util.LoadConfig(".")
 	if err != nil {
 		log.Fatal("Cannot load configurations:", err)
@@ -37,7 +37,15 @@ func getFlights(arg SearchParams) []interface{} {
 		log.Fatal("Integration error:", err)
 	}
 
-	combinedFlights := append(results["best_flights"].([]interface{}), results["best_flights"].([]interface{})...)
+	var resultFlights []interface{}
 
-	return combinedFlights
+	if results["best_flights"] != nil {
+		resultFlights = append(resultFlights, results["best_flights"].([]interface{})...)
+	}
+
+	if results["other_flights"] != nil {
+		resultFlights = append(resultFlights, results["other_flights"].([]interface{})...)
+	}
+
+	return resultFlights
 }

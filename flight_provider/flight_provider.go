@@ -13,6 +13,7 @@ type Flight struct {
 	BoardingFee   float64          `json:"boarding_fee"`
 	AmparoFee     float64          `json:"amparo_fee"`
 	FinalPrice    float64          `json:"final_price"`
+	DiscountRate  int              `json:"discount_rate"`
 	TotalDuration int              `json:"duration"`
 	Airline       string           `json:"airline"`
 	Airlinelogo   string           `json:"airline_logo"`
@@ -32,7 +33,7 @@ type FlightSegment struct {
 func FlightsWithDiscount(args SearchParams) []*Flight {
 	var flights []*Flight
 
-	results := getFlights(args)
+	results := GetFlights(args)
 
 	for _, flight := range results {
 		flightMap := flight.(map[string]interface{})
@@ -53,12 +54,15 @@ func FlightsWithDiscount(args SearchParams) []*Flight {
 			})
 		}
 
+		calculatedPrice := PriceCalculator(flightMap["price"].(float64), segments[0].Airline)
+
 		//TODO: Flight discount calculator
 		flights = append(flights, &Flight{
 			RegularPrice:  flightMap["price"].(float64),
-			BoardingFee:   flightMap["price"].(float64),
-			AmparoFee:     flightMap["price"].(float64),
-			FinalPrice:    flightMap["price"].(float64),
+			BoardingFee:   calculatedPrice.BoardingFee,
+			AmparoFee:     calculatedPrice.AmparoFee,
+			FinalPrice:    calculatedPrice.FinalPrice,
+			DiscountRate:  calculatedPrice.DiscountRate,
 			TotalDuration: int(flightMap["total_duration"].(float64)),
 			Airline:       segments[0].Airline, // For now
 			Airlinelogo:   flightMap["airline_logo"].(string),
