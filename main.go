@@ -1,29 +1,19 @@
 package main
 
 import (
-	"encoding/json"
-	"fmt"
+	"log"
 
-	flightprovider "gihub.com/pauloherrera/goflight/flight_provider"
+	"gihub.com/pauloherrera/goflight/api"
+	"gihub.com/pauloherrera/goflight/util"
 )
 
 func main() {
-	//Sample data for simulate search params
-	arg := flightprovider.SearchParams{
-		DepartureID:   "CGH",
-		DepartureDate: "2024-09-07",
-		ArrivalID:     "GIG",
-		ArrivalDate:   "2024-09-12",
-		FlightType:    1,
-	}
-
-	flightList := flightprovider.FlightsWithDiscount(arg)
-
-	jsonData, err := json.Marshal(flightList)
+	config, err := util.LoadConfig(".")
 	if err != nil {
-		fmt.Println("Error marshalling JSON:", err)
-		return
+		log.Fatal("Cannot load configurations:", err)
 	}
 
-	fmt.Println(string(jsonData))
+	server := api.NewServer()
+
+	server.Start(config.ServerAddress)
 }

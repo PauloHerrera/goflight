@@ -1,4 +1,7 @@
 test:
 	go test -v -cover ./...
 
-.PHONY: test
+server:
+	go run main.go
+
+.PHONY: test server

@@ -1,10 +1,12 @@
 package flightprovider
 
+import "log"
+
 type SearchParams struct {
 	DepartureID   string `json:"departure_id"`
 	DepartureDate string `json:"departure_date"`
-	ArrivalID     string `json:"arrival_id"`
-	ArrivalDate   string `json:"arrival_date"`
+	ReturnID      string `json:"return_id"`
+	ReturnDate    string `json:"return_date"`
 	FlightType    int    `json:"flight_type"`
 }
 
@@ -30,10 +32,12 @@ type FlightSegment struct {
 	Airline          string `json:"airline"`
 }
 
-func FlightsWithDiscount(args SearchParams) []*Flight {
-	var flights []*Flight
-
-	results := GetFlights(args)
+func FlightsWithDiscount(args SearchParams) (flights []*Flight, err error) {
+	results, err := GetFlights(args)
+	if err != nil {
+		log.Fatal("Flight search error:", err)
+		return nil, err
+	}
 
 	for _, flight := range results {
 		flightMap := flight.(map[string]interface{})
@@ -56,7 +60,6 @@ func FlightsWithDiscount(args SearchParams) []*Flight {
 
 		calculatedPrice := PriceCalculator(flightMap["price"].(float64), segments[0].Airline)
 
-		//TODO: Flight discount calculator
 		flights = append(flights, &Flight{
 			RegularPrice:  flightMap["price"].(float64),
 			BoardingFee:   calculatedPrice.BoardingFee,
@@ -70,5 +73,5 @@ func FlightsWithDiscount(args SearchParams) []*Flight {
 		})
 	}
 
-	return flights
+	return
 }

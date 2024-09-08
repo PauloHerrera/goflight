@@ -9,11 +9,12 @@ import (
 	"gihub.com/pauloherrera/goflight/util"
 )
 
-// Search for the available flights through external API integration
-func GetFlights(arg SearchParams) []interface{} {
+// Search for available flights through external API integration
+func GetFlights(arg SearchParams) (resultFlights []interface{}, err error) {
 	config, err := util.LoadConfig(".")
 	if err != nil {
 		log.Fatal("Cannot load configurations:", err)
+		return nil, err
 	}
 
 	args := map[string]string{
@@ -21,9 +22,9 @@ func GetFlights(arg SearchParams) []interface{} {
 		"hl":            "pt-br",
 		"gl":            "br",
 		"departure_id":  arg.DepartureID,
-		"arrival_id":    arg.ArrivalID,
+		"arrival_id":    arg.ReturnID,
 		"outbound_date": arg.DepartureDate,
-		"return_date":   arg.DepartureDate,
+		"return_date":   arg.ReturnDate,
 		"currency":      "BRL",
 		"adults":        "1",
 		"type":          strconv.Itoa(arg.FlightType),
@@ -35,9 +36,8 @@ func GetFlights(arg SearchParams) []interface{} {
 
 	if err != nil {
 		log.Fatal("Integration error:", err)
+		return nil, err
 	}
-
-	var resultFlights []interface{}
 
 	if results["best_flights"] != nil {
 		resultFlights = append(resultFlights, results["best_flights"].([]interface{})...)
@@ -47,5 +47,5 @@ func GetFlights(arg SearchParams) []interface{} {
 		resultFlights = append(resultFlights, results["other_flights"].([]interface{})...)
 	}
 
-	return resultFlights
+	return
 }
