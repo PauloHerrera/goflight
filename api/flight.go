@@ -5,13 +5,14 @@ import (
 
 	f "gihub.com/pauloherrera/goflight/flight_provider"
 	"github.com/gin-gonic/gin"
+	"github.com/go-playground/validator/v10"
 )
 
 type getFlightRequest struct {
-	DepartureAirport string `form:"departure_airport" binding:"required"`
-	DepartureDate    string `form:"departure_date" binding:"required"`
-	ReturnAirport    string `form:"return_airport"`
-	ReturnDate       string `form:"return_date"`
+	DepartureAirport string `form:"departure_airport" binding:"required,validAirport"`
+	DepartureDate    string `form:"departure_date" binding:"required,validDate"`
+	ReturnAirport    string `form:"return_airport" binding:"validAirport"`
+	ReturnDate       string `form:"return_date" binding:"validDate"`
 	FlightType       int    `form:"flight_type" binding:"required,oneof=1 2"`
 }
 
@@ -19,8 +20,7 @@ type getFlightRequest struct {
 func (server *Server) GetFlights(ctx *gin.Context) {
 	var req getFlightRequest
 
-	if err := ctx.ShouldBindQuery(&req); err != nil {
-		ctx.JSON(http.StatusBadRequest, errorResponse(err))
+	if !validRequest(ctx, req) {
 		return
 	}
 
@@ -40,6 +40,26 @@ func (server *Server) GetFlights(ctx *gin.Context) {
 	}
 
 	ctx.JSON(http.StatusOK, flightList)
+}
+
+func validRequest(ctx *gin.Context, req getFlightRequest) bool {
+	var fieldErrors = map[string]string{}
+
+	if err := ctx.ShouldBindQuery(&req); err != nil {
+		if validationErrors, ok := err.(validator.ValidationErrors); ok {
+			for _, err := range validationErrors {
+				fieldErrors[err.Field()] = err.Tag()
+			}
+		} else {
+			fieldErrors["error"] = err.Error()
+		}
+
+		ctx.JSON(http.StatusBadRequest, errorResponseList(fieldErrors))
+
+		return false
+	}
+
+	return true
 }
 
 // TODO : POST FLIGHTS

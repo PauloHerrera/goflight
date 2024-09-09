@@ -1,6 +1,9 @@
 package flightprovider
 
-import "log"
+import (
+	"log"
+	"sort"
+)
 
 type SearchParams struct {
 	DepartureID   string `json:"departure_id"`
@@ -73,5 +76,10 @@ func FlightsWithDiscount(args SearchParams) (flights []*Flight, err error) {
 		})
 	}
 
-	return
+	// Sort the list from the cheapest flight and return just the first five options
+	sort.Slice(flights, func(i, j int) bool {
+		return flights[i].FinalPrice < flights[j].FinalPrice
+	})
+
+	return flights[:5], err
 }
