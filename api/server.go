@@ -36,8 +36,18 @@ func errorResponse(err error) gin.H {
 	return gin.H{"error": err.Error()}
 }
 
-func errorResponseList(err interface{}) map[string]interface{} {
+func errorResponseList(err error) map[string]interface{} {
+	var fieldErrors = map[string]string{}
+
+	if validationErrors, ok := err.(validator.ValidationErrors); ok {
+		for _, err := range validationErrors {
+			fieldErrors[err.Field()] = err.Tag()
+		}
+	} else {
+		fieldErrors["error"] = err.Error()
+	}
+
 	return map[string]interface{}{
-		"error": err,
+		"error": fieldErrors,
 	}
 }
