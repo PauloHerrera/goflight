@@ -1,17 +1,22 @@
 package api
 
 import (
+	"gihub.com/pauloherrera/goflight/storage"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
 	"github.com/go-playground/validator/v10"
 )
 
 type Server struct {
+	db     *storage.Worker
 	router *gin.Engine
 }
 
-func NewServer() *Server {
-	server := &Server{}
+func NewServer(mongodb *storage.Worker) *Server {
+	server := &Server{
+		db: mongodb,
+	}
+
 	router := gin.Default()
 
 	if v, ok := binding.Validator.Engine().(*validator.Validate); ok {
