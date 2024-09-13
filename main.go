@@ -18,5 +18,5 @@ func main() {
 
 	server := api.NewServer(worker)
 
-	server.Start(config.ServerAddress)
+	server.Start(config.ServerPort)
 }

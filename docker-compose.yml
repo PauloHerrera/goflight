@@ -1,5 +1,13 @@
 version: "3.9"
 services:
+  app:
+    container_name: go-flight
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    env_file: .env
+    ports:
+      - "${SERVER_PORT}:${SERVER_PORT}"
   mongodb:
     container_name: mongodb-container
     image: mongo:latest
@@ -8,7 +16,7 @@ services:
       - "27017:27017"
     volumes:
       - mongodb-data:/data/db
-      - ./db/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+      - ./storage/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
     env_file:
       - .env
     command: [--auth]

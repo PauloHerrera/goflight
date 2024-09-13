@@ -1,7 +1,7 @@
 test:
 	go test -v -cover ./...
 
-setup-db:
+run:
 	docker-compose up -d
 
 cleanup:
@@ -11,6 +11,4 @@ cleanup:
 server: 
 	go run main.go
 
-run: setup-db server
-
-.PHONY: test run server setup-db
+.PHONY: test run server cleanup

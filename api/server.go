@@ -1,6 +1,8 @@
 package api
 
 import (
+	"net/http"
+
 	"gihub.com/pauloherrera/goflight/storage"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
@@ -24,8 +26,9 @@ func NewServer(mongodb *storage.Worker) *Server {
 		v.RegisterValidation("validDate", validDate)
 	}
 
+	router.GET("/health", server.healthCheck)
 	router.GET("/flights", server.GetFlights)
-	router.POST("/flights", server.PostFlights)
+	router.PUT("/flights", server.PutFlights)
 
 	server.router = router
 
@@ -33,8 +36,8 @@ func NewServer(mongodb *storage.Worker) *Server {
 }
 
 // Starts and run the server
-func (server *Server) Start(address string) error {
-	return server.router.Run(address)
+func (server *Server) Start(port string) error {
+	return server.router.Run(":" + port)
 }
 
 func errorResponse(err error) gin.H {
@@ -55,4 +58,8 @@ func errorResponseList(err error) map[string]interface{} {
 	return map[string]interface{}{
 		"error": fieldErrors,
 	}
+}
+
+func (server *Server) healthCheck(c *gin.Context) {
+	c.JSON(http.StatusOK, gin.H{"message": "Server is ready"})
 }

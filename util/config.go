@@ -4,10 +4,10 @@ import "github.com/spf13/viper"
 
 // Stores all configuration vars of the application.
 type Config struct {
-	FlightApiKey  string `mapstructure:"GOOGLE_FLIGHT_KEY"`
-	ServerAddress string `mapstructure:"SERVER_ADDRESS"`
-	DatabaseUri   string `mapstructure:"DATABASE_URI"`
-	DatabaseName  string `mapstructure:"DATABASE_NAME"`
+	FlightApiKey string `mapstructure:"GOOGLE_FLIGHT_KEY"`
+	ServerPort   string `mapstructure:"SERVER_PORT"`
+	DatabaseUri  string `mapstructure:"DATABASE_URI"`
+	DatabaseName string `mapstructure:"DATABASE_NAME"`
 }
 
 func LoadConfig(path string) (config Config, err error) {
