@@ -48,11 +48,11 @@ func (server *Server) GetFlights(ctx *gin.Context) {
 type flightPreferencesParams struct {
 	Order         int                     `json:"order" binding:"required"`
 	Direction     string                  `json:"flight_direction" binding:"required,oneof=departure return"`
-	RegularPrice  float64                 `json:"regular_price"`
+	RegularPrice  float64                 `json:"regular_price" binding:"required"`
 	BoardingFee   float64                 `json:"boarding_fee"`
 	AirlineFee    float64                 `json:"airline_fee"`
 	AmparoFee     float64                 `json:"amparo_fee"`
-	FinalPrice    float64                 `json:"final_price"`
+	FinalPrice    float64                 `json:"final_price" binding:"required"`
 	DiscountRate  int                     `json:"discount_rate"`
 	TotalDuration int                     `json:"duration"`
 	Airline       string                  `json:"airline"`
@@ -71,7 +71,7 @@ type flightSegmentsParams struct {
 }
 
 // Stores user flight preferences
-func (server *Server) PostFlights(ctx *gin.Context) {
+func (server *Server) PutFlights(ctx *gin.Context) {
 	var req []flightPreferencesParams
 
 	if err := ctx.ShouldBindBodyWithJSON(&req); err != nil {
@@ -93,13 +93,19 @@ func (server *Server) PostFlights(ctx *gin.Context) {
 		return
 	}
 
-	result, err := server.db.PostUserFlights(ctx, args)
+	validFlight, err := validFlightItems(args)
+	if !validFlight {
+		ctx.JSON(http.StatusBadRequest, errorResponse(err))
+		return
+	}
+
+	err = server.db.PutUserFlights(ctx, args)
 	if err != nil {
 		ctx.JSON(http.StatusBadRequest, errorResponse(err))
 		return
 	}
 
-	ctx.JSON(http.StatusCreated, result)
+	ctx.JSON(http.StatusCreated, nil)
 }
 
 func buildFlight(userID string, flightPreferences []flightPreferencesParams) (flight *storage.UserFlight, err error) {
@@ -154,4 +160,18 @@ func buildFlight(userID string, flightPreferences []flightPreferencesParams) (fl
 	}
 
 	return
+}
+
+func validFlightItems(params *storage.UserFlight) (bool, error) {
+	if len(params.DepartureFlights) > 3 || len(params.DepartureFlights) == 0 {
+		err := errors.New("invalid number of departure flights. Expected between 1 and 3")
+		return false, err
+	}
+
+	if len(params.ReturnFlights) > 3 || len(params.ReturnFlights) == 0 {
+		err := errors.New("invalid number of return flights. Expected between 1 and 3")
+		return false, err
+	}
+
+	return true, nil
 }

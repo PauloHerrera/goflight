@@ -5,7 +5,7 @@ import (
 	"log"
 
 	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 const collectionName = "user_flights"
@@ -27,10 +27,14 @@ func (db *Worker) GetFlight() (results []bson.M, err error) {
 	return results, err
 }
 
-func (db *Worker) PostUserFlights(ctx context.Context, userFlights *UserFlight) (results mongo.InsertOneResult, err error) {
+func (db *Worker) PutUserFlights(ctx context.Context, userFlights *UserFlight) (err error) {
 	coll := db.client.Database(db.database).Collection(collectionName)
 
-	_, err = coll.InsertOne(ctx, userFlights)
+	filter := bson.M{"user_id": userFlights.UserID}
+	update := bson.M{"$set": userFlights}
+
+	_, err = coll.UpdateOne(ctx, filter, update, options.Update().SetUpsert(true))
+
 	if err != nil {
 		log.Fatal("failed to insert flight data", err)
 		return

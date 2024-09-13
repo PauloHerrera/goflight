@@ -1,0 +1,146 @@
+[
+  {
+    "order": 1,
+    "flight_direction": "departure",
+    "regular_price": 1546,
+    "boarding_fee": 30,
+    "airline_fee": 303.2,
+    "amparo_fee": 30.32,
+    "final_price": 363.52,
+    "discount_rate": 77,
+    "duration": 120,
+    "airline": "Gol",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G3.png",
+    "segments": [
+      {
+        "flight_number": "G3 1111",
+        "departure_date": "2024-09-13 04:00",
+        "departure_airport": "Aeroporto Internacional de Cuiabá - Marechal Rondon",
+        "arrival_date": "2024-09-13 07:00",
+        "arrival_airport": "Aeroporto Internacional de Guarulhos",
+        "duration": 120,
+        "airline": "Gol"
+      }
+    ]
+  },
+  {
+    "order": 2,
+    "flight_direction": "departure",
+    "regular_price": 1546,
+    "boarding_fee": 30,
+    "airline_fee": 303.2,
+    "amparo_fee": 30.32,
+    "final_price": 363.52,
+    "discount_rate": 77,
+    "duration": 140,
+    "airline": "Gol",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G3.png",
+    "segments": [
+      {
+        "flight_number": "G3 2222",
+        "departure_date": "2024-09-13 17:50",
+        "departure_airport": "Aeroporto Internacional de Cuiabá - Marechal Rondon",
+        "arrival_date": "2024-09-13 21:10",
+        "arrival_airport": "Aeroporto Internacional de Guarulhos",
+        "duration": 140,
+        "airline": "Gol"
+      }
+    ]
+  },
+  {
+    "order": 3,
+    "flight_direction": "departure",
+    "regular_price": 1362,
+    "boarding_fee": 30,
+    "airline_fee": 1332,
+    "amparo_fee": 133.2,
+    "final_price": 1495.2,
+    "discount_rate": 0,
+    "duration": 135,
+    "airline": "Azul",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AD.png",
+    "segments": [
+      {
+        "flight_number": "AD 3333",
+        "departure_date": "2024-09-13 19:00",
+        "departure_airport": "Aeroporto Internacional de Cuiabá - Marechal Rondon",
+        "arrival_date": "2024-09-13 22:15",
+        "arrival_airport": "Aeroporto Internacional de Guarulhos",
+        "duration": 135,
+        "airline": "Azul"
+      }
+    ]
+  },
+  {
+    "order": 1,
+    "flight_direction": "return",
+    "regular_price": 476,
+    "boarding_fee": 30,
+    "airline_fee": 89.2,
+    "amparo_fee": 8.92,
+    "final_price": 128.12,
+    "discount_rate": 74,
+    "duration": 140,
+    "airline": "Gol",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G3.png",
+    "segments": [
+      {
+        "flight_number": "G3 4444",
+        "departure_date": "2024-10-01 08:00",
+        "departure_airport": "Aeroporto Internacional de Guarulhos",
+        "arrival_date": "2024-10-01 09:20",
+        "arrival_airport": "Aeroporto Internacional de Cuiabá - Marechal Rondon",
+        "duration": 140,
+        "airline": "Gol"
+      }
+    ]
+  },
+  {
+    "order": 2,
+    "flight_direction": "return",
+    "regular_price": 476,
+    "boarding_fee": 30,
+    "airline_fee": 89.2,
+    "amparo_fee": 8.92,
+    "final_price": 128.12,
+    "discount_rate": 74,
+    "duration": 145,
+    "airline": "Gol",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G3.png",
+    "segments": [
+      {
+        "flight_number": "G3 5555",
+        "departure_date": "2024-10-01 15:45",
+        "departure_airport": "Aeroporto Internacional de Guarulhos",
+        "arrival_date": "2024-10-01 17:10",
+        "arrival_airport": "Aeroporto Internacional de Cuiabá - Marechal Rondon",
+        "duration": 145,
+        "airline": "Gol"
+      }
+    ]
+  },
+  {
+    "order": 3,
+    "flight_direction": "return",
+    "regular_price": 476,
+    "boarding_fee": 30,
+    "airline_fee": 89.2,
+    "amparo_fee": 8.92,
+    "final_price": 128.12,
+    "discount_rate": 74,
+    "duration": 145,
+    "airline": "Gol",
+    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/G3.png",
+    "segments": [
+      {
+        "flight_number": "G3 6666",
+        "departure_date": "2024-10-01 23:40",
+        "departure_airport": "Aeroporto Internacional de Guarulhos",
+        "arrival_date": "2024-10-02 01:05",
+        "arrival_airport": "Aeroporto Internacional de Cuiabá - Marechal Rondon",
+        "duration": 145,
+        "airline": "Gol"
+      }
+    ]
+  }
+]
